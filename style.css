@@ -95,6 +95,7 @@ nav {
   border: none; cursor: pointer;
 }
 .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(2,195,154,0.35); }
+.btn-primary:disabled { opacity: 0.6; cursor: not-allowed; transform: none; box-shadow: none; }
 .btn-outline {
   border: 1px solid var(--teal); color: var(--mint);
   padding: 0.85rem 2.2rem; border-radius: 30px;
@@ -103,6 +104,7 @@ nav {
   cursor: pointer;
 }
 .btn-outline:hover { background: rgba(2,128,144,0.15); transform: translateY(-2px); }
+.btn-outline:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
 .scroll-hint {
   position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%);
   display: flex; flex-direction: column; align-items: center; gap: 0.5rem;
@@ -288,6 +290,9 @@ section { padding: 100px 2rem; }
 .form-group input:focus, .form-group textarea:focus, .form-group select:focus {
   border-color: var(--mint); background: rgba(2,195,154,0.05);
 }
+.form-group input.invalid, .form-group textarea.invalid {
+  border-color: #ff6b6b;
+}
 .form-group textarea { resize: vertical; min-height: 120px; }
 .form-group select option { background: var(--dark2); }
 .form-status {
@@ -296,6 +301,13 @@ section { padding: 100px 2rem; }
 }
 .form-status.success { background: rgba(2,195,154,0.1); color: var(--mint); border: 1px solid rgba(2,195,154,0.3); }
 .form-status.error { background: rgba(220,50,50,0.1); color: #ff6b6b; border: 1px solid rgba(220,50,50,0.3); }
+/* Honeypot field: hidden from real users, visible to bots that fill every input */
+.hp-field {
+  position: absolute !important;
+  left: -9999px !important;
+  width: 1px; height: 1px;
+  opacity: 0; pointer-events: none;
+}
 /* ─── FOOTER ─── */
 footer {
   background: var(--dark); border-top: 1px solid rgba(2,128,144,0.2);
@@ -329,4 +341,13 @@ footer span { color: var(--mint); }
   .about-grid, .contact-wrap, .cv-grid { grid-template-columns: 1fr; gap: 2rem; }
   .about-stats { grid-template-columns: repeat(3,1fr); }
   .hero-btns { flex-direction: column; align-items: center; }
+}
+/* Respect users who prefer less motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
