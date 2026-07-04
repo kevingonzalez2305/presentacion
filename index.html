@@ -4,13 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Electrodos — Soluciones Tecnológicas</title>
-<meta name="description" content="Electrodos — Soluciones Tecnológicas: desarrollo de páginas web, apps móviles Android, bases de datos y sistemas de inventario a la medida en Ciudad Juárez, Chihuahua.">
-<meta property="og:title" content="Electrodos — Soluciones Tecnológicas">
-<meta property="og:description" content="Transformamos ideas en sistemas reales: bases de datos, páginas web y software a la medida para tu negocio.">
-<meta property="og:type" content="website">
-<meta property="og:image" content="og-image.png">
-<meta name="theme-color" content="#0A2540">
-<link rel="icon" href="favicon.ico">
 <link rel="stylesheet" href="style.css">
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
@@ -174,7 +167,7 @@ window.addEventListener('load', function() {
         <h2 class="section-title">Tecnología que <br>trabaja para ti</h2>
         <div class="section-line"></div>
         <div class="about-text">
-          <p>Somos <strong>Electrodos</strong>, una empresa de soluciones tecnológicas fundada por <strong>Kevin González</strong>, especializado en desarrollo de software y sistemas web.</p>
+          <p>Somos <strong>Electrodos</strong>, una empresa de soluciones tecnológicas fundada por <strong>Kevin González</strong>,  especializado en desarrollo de software y sistemas web.</p>
           <p>Nuestra misión es clara: llevar soluciones tecnológicas reales, modernas y accesibles a negocios de todos los tamaños. No vendemos plantillas — construimos lo que tú necesitas.</p>
         </div>
         <div class="trophy-badge">
@@ -324,12 +317,12 @@ window.addEventListener('load', function() {
           <div class="service-tags" style="margin-bottom:1rem;">
             <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
           </div>
-          <a href="https://ElectrodosST.github.io/proyecto-final-pag-web/" target="_blank" rel="noopener noreferrer" class="project-link">Ver ejemplo</a>
+          <a href="https://ElectrodosST.github.io/proyecto-final-pag-web/" target="_blank" class="project-link">Ver ejemplo</a>
         </div>
       </div>
     </div>
     <div style="text-align:center; margin-top:2.5rem;" class="reveal">
-      <a href="https://github.com/ElectrodosST/proyectos" target="_blank" rel="noopener noreferrer" class="btn-outline">Ver todos en GitHub</a>
+      <a href="https://github.com/ElectrodosST/proyectos" target="_blank" class="btn-outline">Ver todos en GitHub</a>
     </div>
   </div>
 </section>
@@ -342,7 +335,7 @@ window.addEventListener('load', function() {
       <h2 class="section-title">Currículum</h2>
       <div class="section-line"></div>
       <a href="CV.pdf" download="CV_Raul_Gonzalez_Chavez.pdf" class="cv-download">⬇ Descargar CV completo (PDF)</a>
-      <a href="reconocimiento.pdf" target="_blank" rel="noopener noreferrer" class="cv-download">🏆 Ver reconocimiento ITCJ</a>
+      <a href="reconocimiento.pdf" target="_blank" class="cv-download">🏆 Ver reconocimiento ITCJ</a>
     </div>
     <div class="cv-grid">
       <div>
@@ -408,7 +401,7 @@ window.addEventListener('load', function() {
           <div class="contact-ico">📱</div>
           <div>
             <div style="font-size:0.75rem; color:var(--gray); margin-bottom:0.2rem;">WhatsApp</div>
-            <a href="https://wa.me/526567697333" target="_blank" rel="noopener noreferrer">656 769 7333</a>
+            <a href="https://wa.me/526567697333" target="_blank">656 769 7333</a>
           </div>
         </div>
         <div class="contact-item">
@@ -422,7 +415,7 @@ window.addEventListener('load', function() {
           <div class="contact-ico">💻</div>
           <div>
             <div style="font-size:0.75rem; color:var(--gray); margin-bottom:0.2rem;">GitHub</div>
-            <a href="https://ElectrodosST.github.io/proyecto-final-pag-web/" target="_blank" rel="noopener noreferrer">ElectrodosST</a>
+            <a href="https://ElectrodosST.github.io/proyecto-final-pag-web/" target="_blank">ElectrodosST</a>
           </div>
         </div>
         <div class="contact-item">
@@ -434,18 +427,18 @@ window.addEventListener('load', function() {
         </div>
       </div>
       <div class="reveal-right">
-        <form class="contact-form" id="contactForm" novalidate>
+        <div class="contact-form">
           <div class="form-group">
-            <label for="fname">NOMBRE</label>
-            <input type="text" id="fname" name="fname" placeholder="Tu nombre completo" autocomplete="name" required>
+            <label>NOMBRE</label>
+            <input type="text" id="fname" placeholder="Tu nombre completo">
           </div>
           <div class="form-group">
-            <label for="femail">EMAIL</label>
-            <input type="email" id="femail" name="femail" placeholder="tucorreo@ejemplo.com" autocomplete="email" required>
+            <label>EMAIL</label>
+            <input type="email" id="femail" placeholder="tucorreo@ejemplo.com">
           </div>
           <div class="form-group">
-            <label for="fservice">SERVICIO DE INTERÉS</label>
-            <select id="fservice" name="fservice">
+            <label>SERVICIO DE INTERÉS</label>
+            <select id="fservice">
               <option value="">Selecciona un servicio…</option>
               <option>Base de datos</option>
               <option>Página web</option>
@@ -455,20 +448,15 @@ window.addEventListener('load', function() {
             </select>
           </div>
           <div class="form-group">
-            <label for="fmessage">MENSAJE</label>
-            <textarea id="fmessage" name="fmessage" placeholder="Cuéntanos tu idea o proyecto…" required></textarea>
-          </div>
-          <!-- Honeypot anti-spam: campo oculto que solo un bot llenaría -->
-          <div class="form-group hp-field" aria-hidden="true">
-            <label for="fwebsite">No llenar este campo</label>
-            <input type="text" id="fwebsite" name="fwebsite" tabindex="-1" autocomplete="off">
+            <label>MENSAJE</label>
+            <textarea id="fmessage" placeholder="Cuéntanos tu idea o proyecto…"></textarea>
           </div>
           <div style="display:flex; gap:1rem; flex-wrap:wrap;">
-            <button type="button" class="btn-primary" onclick="sendWhatsApp()" style="flex:1;">📱 WhatsApp</button>
-            <button type="button" class="btn-outline" id="emailBtn" onclick="sendEmailJS()" style="flex:1;">📧 Enviar Email</button>
+            <button class="btn-primary" onclick="sendWhatsApp()" style="flex:1;">📱 WhatsApp</button>
+            <button class="btn-outline" id="emailBtn" onclick="sendEmailJS()" style="flex:1;">📧 Enviar Email</button>
           </div>
-          <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
-        </form>
+          <div class="form-status" id="formStatus"></div>
+        </div>
       </div>
     </div>
   </div>
@@ -603,7 +591,7 @@ window.addEventListener('load', function() {
   <span class="chat-badge" id="chatBadge">1</span>
 </button>
 
-<div id="chat-window" role="dialog" aria-label="Chat de Electrodos">
+<div id="chat-window">
   <div id="chat-header">
     <div id="chat-header-info">
       <div class="chat-avatar">E</div>
@@ -612,58 +600,29 @@ window.addEventListener('load', function() {
         <p class="chat-status">● En línea</p>
       </div>
     </div>
-    <button id="chat-close" onclick="toggleChat()" aria-label="Cerrar chat">✕</button>
+    <button id="chat-close" onclick="toggleChat()">✕</button>
   </div>
-  <div id="chat-messages" aria-live="polite"></div>
+  <div id="chat-messages"></div>
   <div id="chat-input-area">
-    <input id="chat-input" type="text" placeholder="Escribe tu pregunta…" aria-label="Mensaje para el chat" />
+    <input id="chat-input" type="text" placeholder="Escribe tu pregunta…" />
     <button id="chat-send" onclick="chatSend()" aria-label="Enviar">➤</button>
   </div>
 </div>
 
 <script>
 // ── EmailJS init ──────────────────────────────────────────
-// FIX: la Public Key llevaba una "I" mayúscula en vez de "l" minúscula,
-// por lo que el init fallaba silenciosamente y el correo nunca se enviaba.
 if (window.location.hash) history.replaceState(null, '', window.location.pathname);
 window.scrollTo(0, 0);
-emailjs.init('lYom5Pd-NDynOmMsg');
+emailjs.init('IYom5Pd-NDynOmMsg');
 
 // ── Nav ───────────────────────────────────────────────────
 function toggleNav() {
   document.getElementById('navLinks').classList.toggle('open');
 }
-
-// FIX: throttle con requestAnimationFrame para no saturar el hilo principal
-// en cada pixel de scroll (antes corría sin límite en cada evento).
-function throttleRAF(fn) {
-  let ticking = false;
-  return function (...args) {
-    if (!ticking) {
-      window.requestAnimationFrame(() => {
-        fn.apply(this, args);
-        ticking = false;
-      });
-      ticking = true;
-    }
-  };
-}
-
-const navbarEl = document.getElementById('navbar');
-const sections = document.querySelectorAll('section[id]');
-const navAnchors = document.querySelectorAll('.nav-links a');
-
-const handleScroll = throttleRAF(() => {
-  navbarEl.style.background = window.scrollY > 60 ? 'rgba(10,37,64,0.98)' : 'rgba(10,37,64,0.92)';
-
-  let current = '';
-  sections.forEach(s => { if (window.scrollY >= s.offsetTop - 100) current = s.id; });
-  navAnchors.forEach(a => {
-    a.style.color = a.getAttribute('href') === '#' + current ? '#02C39A' : '';
-  });
+window.addEventListener('scroll', () => {
+  const nav = document.getElementById('navbar');
+  nav.style.background = window.scrollY > 60 ? 'rgba(10,37,64,0.98)' : 'rgba(10,37,64,0.92)';
 });
-window.addEventListener('scroll', handleScroll, { passive: true });
-
 document.querySelectorAll('.nav-links a').forEach(a => {
   a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open'));
 });
@@ -694,17 +653,24 @@ const skillObserver = new IntersectionObserver((entries) => {
 document.querySelectorAll('.skills-wrap').forEach(el => skillObserver.observe(el));
 
 // ── Particles ─────────────────────────────────────────────
-// FIX: menos partículas en pantallas chicas/gama baja para no pegarle
-// tan duro al rendimiento en celulares.
 const heroBg = document.getElementById('heroBg');
-const particleCount = window.matchMedia('(max-width: 768px)').matches ? 8 : 18;
-for (let i = 0; i < particleCount; i++) {
+for (let i = 0; i < 18; i++) {
   const p = document.createElement('div');
   p.className = 'particle';
   const size = Math.random() * 5 + 2;
   p.style.cssText = `width:${size}px;height:${size}px;left:${Math.random()*100}%;top:${Math.random()*100}%;animation-duration:${Math.random()*8+6}s;animation-delay:${Math.random()*4}s;opacity:${Math.random()*0.12+0.04};`;
   heroBg.appendChild(p);
 }
+
+// ── Active nav link ───────────────────────────────────────
+const sections = document.querySelectorAll('section[id]');
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(s => { if (window.scrollY >= s.offsetTop - 100) current = s.id; });
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    a.style.color = a.getAttribute('href') === '#' + current ? '#02C39A' : '';
+  });
+});
 
 // ── Form helpers ──────────────────────────────────────────
 function getFormData() {
@@ -713,7 +679,6 @@ function getFormData() {
     email:   document.getElementById('femail').value.trim(),
     service: document.getElementById('fservice').value,
     message: document.getElementById('fmessage').value.trim(),
-    honeypot: document.getElementById('fwebsite').value.trim(),
     status:  document.getElementById('formStatus')
   };
 }
@@ -722,8 +687,6 @@ function clearForm() {
   document.getElementById('femail').value = '';
   document.getElementById('fservice').value = '';
   document.getElementById('fmessage').value = '';
-  document.getElementById('fwebsite').value = '';
-  ['fname', 'femail', 'fmessage'].forEach(id => document.getElementById(id).classList.remove('invalid'));
 }
 function showStatus(status, type, msg) {
   status.textContent = msg;
@@ -731,57 +694,27 @@ function showStatus(status, type, msg) {
   status.style.display = 'block';
 }
 
-// FIX: validación real (no solo "no vacío") para nombre, email y mensaje.
-// Marca visualmente los campos inválidos con la clase .invalid.
-function isValidEmail(email) {
-  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-}
-function validateForm({ name, email, message, honeypot }) {
-  // Honeypot lleno = casi seguro es un bot, se rechaza sin decir por qué.
-  if (honeypot) return { ok: false, silent: true };
-
-  let ok = true;
-  const fnameEl = document.getElementById('fname');
-  const femailEl = document.getElementById('femail');
-  const fmessageEl = document.getElementById('fmessage');
-
-  fnameEl.classList.toggle('invalid', name.length < 2);
-  femailEl.classList.toggle('invalid', !isValidEmail(email));
-  fmessageEl.classList.toggle('invalid', message.length < 5);
-
-  if (name.length < 2) ok = false;
-  if (!isValidEmail(email)) ok = false;
-  if (message.length < 5) ok = false;
-
-  return { ok, silent: false };
-}
-
 // ── WhatsApp ──────────────────────────────────────────────
 function sendWhatsApp() {
-  const data = getFormData();
-  const { name, email, service, message, status } = data;
-  const check = validateForm(data);
-  if (check.silent) return; // bot detectado, no hacemos nada
-  if (!check.ok) { showStatus(status, 'error', 'Revisa tu nombre, email y mensaje.'); return; }
+  const { name, email, service, message, status } = getFormData();
+  if (!name || !email || !message) { showStatus(status, 'error', 'Por favor completa nombre, email y mensaje.'); return; }
   const text = `Hola, soy *${name}* (${email}).\n\n*Servicio:* ${service || 'No especificado'}\n\n*Mensaje:*\n${message}`;
-  window.open('https://wa.me/526567697333?text=' + encodeURIComponent(text), '_blank', 'noopener');
+  window.open('https://wa.me/526567697333?text=' + encodeURIComponent(text), '_blank');
   showStatus(status, 'success', '¡Abriendo WhatsApp!');
   clearForm();
 }
 
 // ── EmailJS ───────────────────────────────────────────────
 async function sendEmailJS() {
-  const data = getFormData();
-  const { name, email, service, message, status } = data;
-  const check = validateForm(data);
-  if (check.silent) return; // bot detectado, no hacemos nada
-  if (!check.ok) {
-    showStatus(status, 'error', 'Revisa tu nombre, email y mensaje.');
+  const { name, email, service, message, status } = getFormData();
+  if (!name || !email || !message) {
+    showStatus(status, 'error', 'Por favor completa nombre, email y mensaje.');
     return;
   }
   const btn = document.getElementById('emailBtn');
   btn.disabled = true;
   btn.textContent = '⏳ Enviando…';
+  showStatus(status, '', '');
   status.style.display = 'none';
   try {
     await emailjs.send('service_d1wgbkn', 'template_tvjwbgh', {
@@ -896,8 +829,6 @@ function chatGetResponse(input) {
   return chatDefault;
 }
 
-// FIX: se usa textContent (ya estaba bien) pero ahora también evitamos que
-// un usuario meta HTML/scripts en sugerencias generadas dinámicamente.
 function chatAddMsg(text, type) {
   const msgs = document.getElementById('chat-messages');
   const div = document.createElement('div');
